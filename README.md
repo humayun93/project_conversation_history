@@ -1,24 +1,22 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Questions
 
-Things you may want to cover:
+1. Should the application be for the web only?
+- Answer: We should consider extending the application to mobile as well.   
 
-* Ruby version
+#### Decision: Make the api applicaiton
 
-* System dependencies
+2. Should the users have ability to leave replies to comments in project?
+- Answer: yes
+####  Decision: Add ability to leave replies to 1 level
 
-* Configuration
+3. Should we have consider ability to extend the API with new features?
+- Answer: yes
 
-* Database creation
+4. Should we consider API interaction performance? 
+- Answer: yes
 
-* Database initialization
+5. Should we consider API first design without deciding prior handshakes between API and FE/ mobile?
+- Answer: yes
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Decision: Use GraphQL to allow extending, higher performance in queries with flexible requests to fetch only required data. 
